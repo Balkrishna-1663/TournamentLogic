@@ -27,7 +27,7 @@ namespace ConsoleApp1
             Console.WriteLine($"Total number of players are {players.Count}");
             Console.WriteLine($"Total number of rounds are {rounds}");
 
-            chuhi(players);
+            Pairs(players);
 
 
 
@@ -36,25 +36,7 @@ namespace ConsoleApp1
 
     class matches
     {
-        public static async Task Pairs(List<string> Players)
-        {
-            for (int i = 0; i < Players.Count; i++)
-            {
-                Console.WriteLine("For " + (i + 1) + " player\n");
-                //Task.Delay(190).Wait();
-
-                for (int j = 0; j < Players.Count; j++)
-                {
-                    if (i != j)
-                    {
-                        Console.WriteLine($"{Players[i]} vs {Players[j]}\n");
-                        //Task.Delay(200).Wait();
-                    }
-                }
-
-            }
-        }
-        public static void chuhi(List<string> Players)
+        public static void Pairs(List<string> Players)
         {
             for (int round = 1; round <= Players.Count-1; round++)
             {
@@ -87,21 +69,3 @@ namespace ConsoleApp1
 
     }
 }
-
-
-
-          
-    class matches 
-    {
-        public static void Pairs(List<string> Players)
-        {
-            for (int i = 0; i < Players.Count; i++)
-            {
-
-                Console.WriteLine(Players[i]);
-
-            }
-        }
-    }
-
-

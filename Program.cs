@@ -46,8 +46,7 @@ class Program:Player
         //  dog champ = new dog();
         // champ.Roar();
 
-
-        chuhi(Players);
+      Pairs(Players);
 
 }
 
