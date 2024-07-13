@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 ﻿using ConsoleApp1;
 using System;
-=======
+
 ﻿using System;
->>>>>>> d5b17ec2b4495faca2d29c158c00ecb19dffbdfb
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -12,34 +10,23 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-<<<<<<< HEAD
-    internal class Player : matches
-    {
-        public static void Main(string[] args)
-        {
-            List<string> players = new List<string>()
-=======
+    
     internal class Player:matches
     {
         public static void Main(string[] args) {
         List<string> players = new List<string>()
->>>>>>> d5b17ec2b4495faca2d29c158c00ecb19dffbdfb
         {
             "Player 1", "Player 2", "Player 3", "Player 4",
                 "Player 5", "Player 6", "Player 7", "Player 8"
 
         };
 
-<<<<<<< HEAD
             int rounds = players.Count - 1;
-=======
-        int rounds = players.Count-1;
->>>>>>> d5b17ec2b4495faca2d29c158c00ecb19dffbdfb
+       
 
             Console.WriteLine($"Total number of players are {players.Count}");
             Console.WriteLine($"Total number of rounds are {rounds}");
 
-<<<<<<< HEAD
             chuhi(players);
 
 
@@ -103,12 +90,7 @@ namespace ConsoleApp1
 
 
 
-            Pairs(players);
-            
-
-       }     
-    }
-
+          
     class matches 
     {
         public static void Pairs(List<string> Players)
@@ -122,4 +104,4 @@ namespace ConsoleApp1
         }
     }
 
-}
+
