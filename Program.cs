@@ -1,13 +1,15 @@
-﻿using ConsoleApp1;
+﻿
+using ConsoleApp1;
 using System.Text.RegularExpressions;
 
-class Program:Player
+class Program : matches
 {
-    public static void Main(string[] args, List<string> Players)
+    public static void Main(string[] args)
     {
         // Async and await.
         //    method1();
         //    method2();
+
         //    Console.ReadKey(); }
 
         //public static async Task method1()
@@ -45,66 +47,70 @@ class Program:Player
         //simba.Roar("Simba");
         //  dog champ = new dog();
         // champ.Roar();
+        // adding(dict);
+        // printingdict(dict);
+        Player kishan = new Player();
+        kishan.Kishan();
 
-      Pairs(Players);
+    }
 
 }
 
-}
 
-abstract class Animal {
-    public  void Roar()
+    abstract class Animal
     {
-        Console.WriteLine("Animal Roared");
-    }
-    public void sleep() {
-        Console.WriteLine("Slept");
+        public void Roar()
+        {
+            Console.WriteLine("Animal Roared");
+        }
+        public void sleep()
+        {
+            Console.WriteLine("Slept");
+        }
+
+
     }
 
-   
-}
-
-class Lion : Animal
-{
-    public  void Roar(string name)
+    class Lion : Animal
     {
-        Console.WriteLine($"{name} roared");
+        public void Roar(string name)
+        {
+            Console.WriteLine($"{name} roared");
+        }
     }
-}
 
-class dog:Animal
-{
-    //public void Roar(string name)
-    //{
-    //    Console.WriteLine($"{name} barked");
-    //}
-}
-
-   class Addition
-{
-public int num1; 
-    public int num2;
-
-    public void Add(int num,int numt)
+    class dog : Animal
     {
-        this.num1 = num;
-        this.num2 = numt;
-        Console.WriteLine(this.num1+this.num2);
+        //public void Roar(string name)
+        //{
+        //    Console.WriteLine($"{name} barked");
+        //}
     }
-}
-class Addiction:Addition
-{
-    public int kish;
-    public void Subt(int num, int num2)
+
+    class Addition
     {
-        Console.WriteLine(num - num2);
+        public int num1;
+        public int num2;
+
+        public void Add(int num, int numt)
+        {
+            this.num1 = num;
+            this.num2 = numt;
+            Console.WriteLine(this.num1 + this.num2);
+        }
     }
-}
-class Mathematics:Addiction
-{
+    class Addiction : Addition
+    {
+        public int kish;
+        public void Subt(int num, int num2)
+        {
+            Console.WriteLine(num - num2);
+        }
+    }
 
 
-}
+
+
 
 
 
